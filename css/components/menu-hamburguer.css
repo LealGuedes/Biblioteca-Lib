@@ -1,0 +1,47 @@
+/*menu hamburguer*/
+*,
+*:before,
+*:after{
+
+	margin:0;
+	padding:0;
+	box-sizing:border-box;  
+}
+.menu-hamburguer{
+	
+	position:static; 
+	background:#2c3e50;
+	border-radius:50%;
+	width:60px;
+	height:60px;
+}
+.hamburguer{
+
+	display:block;
+	position:relative; 
+	background:#878993;
+	width:30px;
+	height:2px;
+	top:30px;
+	left:15px;  
+}
+.hamburguer:before,
+.hamburguer:after{
+
+	position:absolute;
+	background:#878993; 
+	content:'';
+	display:block;
+	height: 100%;
+	width:100%; 
+
+}
+.hamburguer:before{
+
+	top:-10px;
+}
+.hamburguer:after{
+
+	bottom:-10px;
+}
+

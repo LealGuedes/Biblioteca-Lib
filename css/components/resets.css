@@ -1,0 +1,22 @@
+*{
+	
+	margin:0;
+	padding:0;
+
+}
+section,form,nav,ul,header,aside, div, main{
+	
+	display:block;
+	border-size:border-box;
+}
+a{
+	text-decoration:none;
+}
+input{
+
+		outline:none; 
+}
+ul li{
+
+	list-style:none; 
+}

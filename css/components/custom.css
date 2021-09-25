@@ -1,0 +1,287 @@
+@charset "UTF-8";
+@font-face{
+	font-family:"MyriadPro-Regular";
+	src: url("./fontes/MyriadPro-Regular.otf");
+
+}
+body.template-2-colunas header.header{
+
+		display:flex;
+		position:relative;
+		justify-content:space-between; 
+		align-items:center; 
+		flex-direction:row;
+		border-bottom:1px solid #cdcdd1; 
+		/*border:1px solid lime;*/
+		background-color:white;
+		font-family:'MyriadPro-Regular'; 
+}
+body.template-2-colunas header.header img{
+	
+	/*border:1px solid lime;*/
+	margin-left:0.9375rem;  
+	height:125px;
+	width:24.375%; 
+	max-width:234px;  
+}
+
+body.template-2-colunas header.header form{
+	
+
+		display:flex;
+		margin-top:15px;
+		margin-right:15px; 
+		/*border: 1px solid pink;*/
+		justify-content:space-around; 
+		align-items:center;
+		align-self:start;  
+		flex-direction:row; 
+
+}
+body.template-2-colunas header.header input{
+	
+		position:absolute; 
+		display:block; 
+		width:40%;
+		height:33px; 
+		margin-left:50%; 
+		border-radius:5px;
+		border:1px solid #878993;
+	    font-family:'MyriadPro-Regular';   
+
+}
+body.template-2-colunas header.header form button{
+	
+		flex-grow:1;
+		flex-shrink:0;
+		flex-basis:auto;
+		padding:9px;
+		width:75px;
+		height:35px;
+		font-family:'MyriadPro-Regular';
+		color:#878993;
+
+
+}
+body.template-2-colunas header.header form button:last-child{
+
+	margin-left:15px;
+	width:98px;
+} 
+body.template-2-colunas section.section-nav{
+
+	position:relative;
+	display:flex;
+	flex-direction:row; 
+	justify-content:center;
+
+	
+
+}
+body.template-2-colunas section.section-nav nav.nav{
+
+		position:relative; 
+		display:flex;
+		width:18.22916666666667%;/*175px =>18.125%;*/ 
+		justify-content:center;
+		align-items:center;
+		flex-direction:row;
+		border: 1px solid white;
+	    border-radius:5px;
+	    background-color:#2c3e50;
+	    margin-top:0; 
+	    width:171px;
+	    height:auto; 
+
+}
+
+body.template-2-colunas section.section-nav nav::before{
+
+		position:absolute;
+		content:'LIVROS';
+		color:white;
+		top:0;
+
+}
+body.template-2-colunas section.section-nav nav.nav ul{
+
+		position:absolute;
+		top:20px; 
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		flex-direction:column;
+		background-color:white;
+		/*border: 1px solid lime;*/
+		border-radius:15px;
+		width:96%;/*168*/;    
+}
+body.template-2-colunas section.section-nav nav.nav ul li{
+
+	flex-grow:1;
+	flex-shrink:0;
+	flex-basis:auto;
+	padding-top:17px; 
+	padding-left:15px;
+	/*border:1px solid lime;*/ 
+	width:91%; 
+}
+body.template-2-colunas section.section-nav nav.nav ul li a{
+
+	font-family:'MyriadPro-Regular';
+	margin-left:30%;
+	color:black; 
+}
+body.template-2-colunas footer.footer{
+		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		background-color:rgba(128,128,128); 
+}
+body.template-2-colunas footer.footer a{
+
+		font-family:'MyriadPro-Regular';
+		color:white;
+}
+body.template-2-colunas main.main{
+		
+		display:flex;
+		font-size:16px; 
+		flex-wrap:wrap;
+		/*
+		 max-width:497px;
+		 max-height:750px;*/    
+		justify-content:space-around;
+		align-items:center; 
+		/*background-color:rgba(220,220,220);*/
+		/*border: 1px solid pink;*/ 	
+}
+body.template-2-colunas main.main article.main-child{
+
+	position:relative; 
+	display:flex;
+	flex-grow:1;
+	flex-shrink:0;
+	/*flex-basis:25.833%;/*248*/
+	font-size:16px; 
+	flex-direction:row; 
+	height:auto;
+	padding-top:0.3125rem;/*(5px)*/
+	padding-left:0.3125rem;
+	padding-right:0.3125rem;
+	/*border:1px solid lime;*/
+	width:25.83333333333333%; 
+	/*max-width:248;max-height:138;*/ 
+
+}
+body.template-2-colunas main.main article.main-child h1{
+		
+		font-family:'MyriadPro-Regular';
+		font-weight:bold;
+		color:black;
+		font-size:16pt;  
+
+}
+body.template-2-colunas main.main article.main-child section p{
+		font-family:'MyriadPro-Regular';
+		font-size:16pt;  
+}
+body.template-2-colunas main.main article.main-child img{
+
+	/*formato ideal :.jpg ou .png 
+
+			Tamanho ideal para fundo para pagina:LARGURA:1200 ou 1500px;
+			Tamanho ideal para conteudo:650;
+	*/
+
+	height:134px;/*134*/
+	width:25%; /*94*/
+
+	/*max-height:134px;width:94px;*/ 
+}
+body.template-2-colunas main.main article.main-child  section{
+	position:absolute; 
+	left:30%; 
+	top:50px; 
+}
+body.template-2-colunas main.main article.main-child h1{
+
+	font-family:'MyriadPro-Regular';
+	font-size:1rem; 
+}
+body.template-2-colunas main.main article.main-child section p{
+
+		font-family:'MyriadPro-Regular';
+		font-size:0.875rem;  
+}
+body.template-2-colunas main.main article.main-child  button{
+	position:absolute; 
+	top:110px;
+	left:30%; 
+	height:20%;
+	width:45%;
+	border:1px solid #ccc;
+	border-radius:3px;
+	font-size:0.875rem;
+	font-family:'MyriadPro-Regular';
+	color:#ffffff;
+	background-color:#878993;     
+}
+body.template-2-colunas  footer.footer{
+
+	    font-size:11pt;
+	    position:relative;
+	    display:flex; 
+	    background-color:#2c3e50;
+}
+
+body.template-2-colunas  footer.footer div.footer-info{
+
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;  
+	flex-wrap:wrap;  
+
+	font-family:'MyriadPro-Regular';
+	font-size:0,875em; 
+	color:white;
+}
+body.template-2-colunas  footer.footer p:last-child{
+
+	position:absolute;
+	top:83.9281045751634%;
+}
+body.template-2-colunas header.header div.menu-hamburguer{
+	
+	display:none; 
+}
+
+/*
+
+	--------------DADOS DA LIB-------------------
+    ->DIMENSAO DA PAGINA:
+	
+		W:960px;
+		H:942;
+
+	->DADOS AREA ONDE ESTAO TODOS OS LIVROS:(main)
+
+		H:750;(750/942=79.61783439490446%)
+		W:497;(497/960=51.77083333333333%)
+
+	->DADOS DA AREA ONDE ESTAO OS LIVROS:
+
+		H:138;(138/942 =14,64968152866242%)
+		W:248;(248/960=25,83333333333333%)
+		padding-top:5px;(5/16=0,3125rem)
+		padding-left:5px;(5/16=0,3125rem)
+		pading-right:5px;(5/16=0,3125rem)
+
+		-imagem:
+			W:94;((94/960)x100= 9,791666666666667% [68.115%]=>Medida que ficou melhor);
+			H:134;((134/942)X100=14,22505307855626%);
+
+
+*/
