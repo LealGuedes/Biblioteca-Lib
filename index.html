@@ -10,9 +10,98 @@
 <link rel="stylesheet" type="text/css" href="./css/components/custom.css">
 <link rel="stylesheet" type="text/css" href="./css/components/responsive.css">
 <link rel="stylesheet" type="text/css" href="./css/components/menu-hamburguer.css">
+<link rel="shortcut icon"  href="img/favicon.ico" type="image/x-icon">
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+
+	function mostraMenu(){
+
+
+			/*
+				recupera a largura da 'tela' do dispositivo que o usuario esta usando:window.screen.width;
+				recupera a largura da 'janela' do navegador:window.innerWidth;
+			*/
+
+
+			var largura_da_pagina = Number.parseInt(window.innerWidth);
+			//var p="";	
+			document.getElementById('menu-livros').classList.remove("nav");
+			document.getElementById('menu-livros').classList.add("mostra-menu-dipositivos-pequenos");
+			document.body.style.overflow="hidden";		
+
+			if(largura_da_pagina ==320){
+				
+	
+				document.getElementById('menu-livros').style.top="-178px";			
+			
+					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);				
+
+			}else if(largura_da_pagina ==375){
+
+				document.getElementById('menu-livros').style.top="-205px";
+
+					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);			
+			}
+	}
+	function fechaMenu(){
+
+		document.getElementById('menu-livros').classList.remove("mostra-menu-dipositivos-pequenos");
+		document.getElementById('menu-livros').classList.add("nav");
+	}
+	function todasFuncoes(){
+
+		//alert('carregou as funcoes...');
+
+		document.getElementById('btn-fechar').addEventListener("click",fechaMenu);
+		document.getElementById('menu-hamburguer').addEventListener("click",mostraMenu);
+
+	}
+	window.addEventListener("load",todasFuncoes);
+</script>
+<style type="text/css">
+	
+	body{
+
+			
+			overflow:hidden;
+			
+	}
+	.mostra-menu-dipositivos-pequenos{
+
+
+			position:absolute;
+			z-index:1; 
+			width:100vw;
+			height:100vh;
+			background-color:#2c3e50;
+			opacity:0.7;
+			
+	}
+	.mostra-menu-dipositivos-pequenos ul span#btn-fechar{
+	
+			display:block;
+			color:white;
+			font-size:30pt;
+			margin-left:85%;
+			cursor:pointer;    	
+	}
+    .mostra-menu-dipositivos-pequenos ul li{
+
+		padding:10px;
+		border:1px solid #C0C0C0; 
+	}
+	.mostra-menu-dipositivos-pequenos ul li a{
+
+		display:block; 
+		margin-left:40%;
+		color:white;
+	}
+</style>
 </head>
 <body class="template-2-colunas">
-<header class="header">
+<header class="header" id="header">
 	<img src="img/Logo.png" alt="logo" ></img>
 	<input type="text" name="pesquisar"  placeholder="Pesquisar..."></input>
 		<form action="#">
@@ -22,14 +111,15 @@
 					
 		</form>
 			<!--Menu Hamburguer-->
-		<div class="menu-hamburguer">
+		<div class="menu-hamburguer" id="menu-hamburguer">
 			<span class="hamburguer"></span>
 		</div>
 </header>
 <hr>
-<section class="section-nav">
-	<nav class="nav">
+<section class="section-nav" id="section-nav">
+	<nav class="nav"  id="menu-livros">
 		<ul>
+			<span id="btn-fechar">X</span>
 			<li><a href="#">Teste</a></li>
 			<li><a href="#">Teste</a></li>
 			<li><a href="#">Teste</a></li>

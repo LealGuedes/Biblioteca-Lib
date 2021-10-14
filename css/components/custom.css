@@ -95,6 +95,11 @@ body.template-2-colunas section.section-nav nav.nav{
 
 }
 
+body.template-2-colunas section.section-nav nav.nav span{
+
+	display:none;
+}
+
 body.template-2-colunas section.section-nav nav::before{
 
 		position:absolute;
