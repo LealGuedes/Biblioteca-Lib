@@ -34,13 +34,13 @@
 			if(largura_da_pagina ==320){
 				
 	
-				document.getElementById('menu-livros').style.top="-178px";			
+				document.getElementById('menu-livros').style.top="-177px";			
 			
 					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);				
 
 			}else if(largura_da_pagina ==375){
 
-				document.getElementById('menu-livros').style.top="-205px";
+				document.getElementById('menu-livros').style.top="-177px";
 
 					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);			
 			}
@@ -61,25 +61,26 @@
 	window.addEventListener("load",todasFuncoes);
 </script>
 <style type="text/css">
-	
-	body{
 
-			
-			overflow:hidden;
-			
+	body.body.template-2-colunas{
+
+		position:relative;
 	}
-	.mostra-menu-dipositivos-pequenos{
+
+	nav.mostra-menu-dipositivos-pequenos{
 
 
 			position:absolute;
-			z-index:1; 
+			z-index:333333333;
+			top:-178px; 
 			width:100vw;
 			height:100vh;
+			border:1px solid pink;
 			background-color:#2c3e50;
 			opacity:0.7;
 			
 	}
-	.mostra-menu-dipositivos-pequenos ul span#btn-fechar{
+	nav.mostra-menu-dipositivos-pequenos ul span#btn-fechar{
 	
 			display:block;
 			color:white;
@@ -87,12 +88,12 @@
 			margin-left:85%;
 			cursor:pointer;    	
 	}
-    .mostra-menu-dipositivos-pequenos ul li{
+    nav.mostra-menu-dipositivos-pequenos ul li{
 
 		padding:10px;
 		border:1px solid #C0C0C0; 
 	}
-	.mostra-menu-dipositivos-pequenos ul li a{
+	nav.mostra-menu-dipositivos-pequenos ul li a{
 
 		display:block; 
 		margin-left:40%;
