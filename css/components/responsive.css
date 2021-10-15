@@ -1,5 +1,10 @@
 @media screen and (max-width: 320px){
+	
+	body.template-2-colunas{
 
+			overflow-x:"hidden";
+			overflow-y:"scroll";  
+	}
 	body.template-2-colunas{
  
 		grid-template-columns:99vw;
@@ -70,6 +75,11 @@
 
 }
 @media (min-width: 321px) and (max-width: 565px){
+
+body.template-2-colunas{
+			overflow-x:"hidden";
+			overflow-y:"scroll";  
+	}
 
 body.template-2-colunas{
  

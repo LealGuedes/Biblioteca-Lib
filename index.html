@@ -26,29 +26,15 @@
 
 
 			var largura_da_pagina = Number.parseInt(window.innerWidth);
-			//var p="";	
 			document.getElementById('menu-livros').classList.remove("nav");
 			document.getElementById('menu-livros').classList.add("mostra-menu-dipositivos-pequenos");
-			document.body.style.overflow="hidden";		
-
-			if(largura_da_pagina ==320){
-				
-	
-				document.getElementById('menu-livros').style.top="-175px";			
-			
-					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);				
-
-			}else if(largura_da_pagina ==375){
-
-				document.getElementById('menu-livros').style.top="-205px";
-
-					//console.log("A margem do topo será "+document.getElementById('menu-livros').style.top);			
-			}
 	}
 	function fechaMenu(){
 
 		document.getElementById('menu-livros').classList.remove("mostra-menu-dipositivos-pequenos");
 		document.getElementById('menu-livros').classList.add("nav");
+		document.body.style.overflowY="scroll";		
+		document.body.style.overflowX="hidden";
 	}
 	function todasFuncoes(){
 
@@ -62,17 +48,12 @@
 </script>
 <style type="text/css">
 
-	body.body.template-2-colunas{
-
-		position:relative;
-	}
-
 	nav.mostra-menu-dipositivos-pequenos{
 
 
-			position:absolute;
+			position:fixed;
 			z-index:333333333;
-			top:-178px; 
+			top:0; 
 			width:100vw;
 			height:100vh;
 			border:1px solid pink;
